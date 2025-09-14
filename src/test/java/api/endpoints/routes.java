@@ -10,9 +10,9 @@ package api.endpoints;
  * 
  */
 
-public class routes {
+public class Routes {
 
-	public static String base_url="https://petstore.swagger.io/v2/user";
+	public static String base_url="https://petstore.swagger.io/v2";
 	
 	//User module 
 	
