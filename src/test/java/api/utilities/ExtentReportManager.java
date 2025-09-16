@@ -24,28 +24,23 @@ public class ExtentReportManager implements ITestListener {
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
 		repName = "Test-Report-" + timeStamp + ".html";
 		
-		sparkReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "/test-output/ExtentReport.html");
+		sparkReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "/reports/" + repName);
 		sparkReporter.config().setDocumentTitle("RestAssured Automation Report");
 		sparkReporter.config().setReportName("Pet Store API Test Report");
 		sparkReporter.config().setTheme(Theme.DARK);
 		
 		extent = new ExtentReports();
 		extent.attachReporter(sparkReporter);
-		extent.setSystemInfo("Host Name", "LocalHost");
+		extent.setSystemInfo("User Name", System.getProperty("user.name"));
 		extent.setSystemInfo("Environment", "QA");
-		extent.setSystemInfo("User", "Your Name");
-	}
-
-	public void onFinish(ITestContext context) {
-		extent.flush();
-	}
-	
-	public void onTestStart(org.testng.ITestResult result) {
-		test = extent.createTest(result.getName());
+		extent.setSystemInfo("User", "Anursg");
 	}
 	
 	public void onTestSuccess(org.testng.ITestResult result) {
-		test.pass("Test Passed");
+		test=extent.createTest(result.getName());
+		test.createNode(result.getName());
+		test.assignCategory(result.getMethod().getGroups());
+		test.log(Status.PASS, "Test Passed");
 	}
 	
 	public void onTestFailure(org.testng.ITestResult result) {
@@ -57,6 +52,20 @@ public class ExtentReportManager implements ITestListener {
 	}
 	
 	public void onTestSkipped(org.testng.ITestResult result) {
-		test.skip(result.getThrowable());
+		test=extent.createTest(result.getName());
+		test.createNode(result.getName());
+		test.assignCategory(result.getMethod().getGroups());
+		test.log(Status.SKIP, "Test Skipped");
+		test.log(Status.SKIP, result.getThrowable().getMessage());
 	}
+
+	public void onFinish(ITestContext context) {
+		extent.flush();
+	}
+	
+	public void onTestStart(org.testng.ITestResult result) {
+		test = extent.createTest(result.getName());
+	}
+	
+	
 }

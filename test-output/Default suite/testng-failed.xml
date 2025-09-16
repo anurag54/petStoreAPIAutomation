@@ -5,7 +5,7 @@
     <classes>
       <class name="api.test.DataDrivenTests">
         <methods>
-          <include name="testDeleteUserByName" invocation-numbers="3"/>
+          <include name="testDeleteUserByName" invocation-numbers="2"/>
         </methods>
       </class> <!-- api.test.DataDrivenTests -->
     </classes>
