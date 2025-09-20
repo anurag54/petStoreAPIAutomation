@@ -1,7 +1,14 @@
-2025-09-17 01:17:24 [main] INFO  api.test.UserTests - ********** Creating User **********
-2025-09-17 01:17:30 [main] INFO  api.test.UserTests - ********** User Created **********
-2025-09-17 01:17:30 [main] INFO  api.test.UserTests - ********** Reading User Info **********
-2025-09-17 01:17:35 [main] INFO  api.test.UserTests - ********** Updating User Info **********
-2025-09-17 01:17:48 [main] INFO  api.test.UserTests - ********** User Info Updated **********
-2025-09-17 01:17:48 [main] INFO  api.test.UserTests - ********** Deleting User **********
-2025-09-17 01:17:57 [main] INFO  api.test.UserTests - ********** User Deleted **********
+2025-09-21 01:07:13 [main] INFO  api.test.UserTests2 - ********** Creating User **********
+2025-09-21 01:07:17 [main] INFO  api.test.UserTests2 - ********** User Created **********
+2025-09-21 01:07:17 [main] INFO  api.test.UserTests2 - ********** Reading User Info **********
+2025-09-21 01:07:24 [main] INFO  api.test.UserTests2 - ********** User Info Displayed **********
+2025-09-21 01:07:24 [main] INFO  api.test.UserTests2 - ********** Updating User Info **********
+2025-09-21 01:07:29 [main] INFO  api.test.UserTests2 - ********** User Info Updated **********
+2025-09-21 01:07:29 [main] INFO  api.test.UserTests2 - ********** Deleting User **********
+2025-09-21 01:10:08 [main] INFO  api.test.UserTests2 - ********** Creating User **********
+2025-09-21 01:10:12 [main] INFO  api.test.UserTests2 - ********** User Created **********
+2025-09-21 01:10:12 [main] INFO  api.test.UserTests2 - ********** Reading User Info **********
+2025-09-21 01:10:17 [main] INFO  api.test.UserTests2 - ********** User Info Displayed **********
+2025-09-21 01:10:17 [main] INFO  api.test.UserTests2 - ********** Updating User Info **********
+2025-09-21 01:10:26 [main] INFO  api.test.UserTests2 - ********** Deleting User **********
+2025-09-21 01:10:35 [main] INFO  api.test.UserTests2 - ********** User Deleted **********
