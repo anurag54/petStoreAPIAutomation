@@ -8,7 +8,6 @@ import org.testng.annotations.Test;
 
 import com.github.javafaker.Faker;
 
-import api.endpoints.UserEndPoints;
 import api.endpoints.UserEndPoints2;
 import api.payload.User;
 import io.restassured.response.Response;
