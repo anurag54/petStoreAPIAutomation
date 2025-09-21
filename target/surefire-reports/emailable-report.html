@@ -9,16 +9,23 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">PetSuite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">28,099</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num attn">2</td><td class="num">0</td><td class="num attn">1</td><td class="num">8,136</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">PetSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">api.test.UserTests2</td><td><a href="#m0">testUpdateUserByName</a></td><td rowspan="1">1758397217537</td><td rowspan="1">9094</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">api.test.UserTests2</td><td><a href="#m1">testDeleteUserByName</a></td><td rowspan="1">1758397226637</td><td rowspan="1">8990</td></tr><tr class="passedeven"><td><a href="#m2">testGetUserByName</a></td><td rowspan="1">1758397212027</td><td rowspan="1">5509</td></tr><tr class="passedeven"><td><a href="#m3">testPostUser</a></td><td rowspan="1">1758397208419</td><td rowspan="1">3602</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">PetSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">api.test.UserTests2</td><td><a href="#m0">testGetUserByName</a></td><td rowspan="1">1758479108663</td><td rowspan="1">3160</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">api.test.UserTests2</td><td><a href="#m1">testDeleteUserByName</a></td><td rowspan="1">1758479111832</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m2">testUpdateUserByName</a></td><td rowspan="1">1758479111830</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">api.test.UserTests2</td><td><a href="#m3">testPostUser</a></td><td rowspan="1">1758479104576</td><td rowspan="1">4080</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">api.test.UserTests2#testUpdateUserByName</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [200] but found [404]
-	at api.test.UserTests2.testUpdateUserByName(UserTests2.java:86)
+<h2>Test</h2><h3 id="m0">api.test.UserTests2#testGetUserByName</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [200] but found [404]
+	at api.test.UserTests2.testGetUserByName(UserTests2.java:60)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 ... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">api.test.UserTests2#testDeleteUserByName</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">api.test.UserTests2#testGetUserByName</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">api.test.UserTests2#testDeleteUserByName</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method api.test.UserTests2.testDeleteUserByName() on instance api.test.UserTests2@2a65fe7c depends on not successfully finished methods 
+[api.test.UserTests2.testUpdateUserByName() on instance api.test.UserTests2@2a65fe7c]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">api.test.UserTests2#testUpdateUserByName</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method api.test.UserTests2.testUpdateUserByName() on instance api.test.UserTests2@2a65fe7c depends on not successfully finished methods 
+[api.test.UserTests2.testPostUser() on instance api.test.UserTests2@2a65fe7c
+api.test.UserTests2.testGetUserByName() on instance api.test.UserTests2@2a65fe7c]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m3">api.test.UserTests2#testPostUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

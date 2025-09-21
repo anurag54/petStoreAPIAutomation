@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/2</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Sep 21 01:10:07 IST 2025</td>
+<td>Started on:</td><td>Sun Sep 21 23:55:03 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>28 seconds (28099 ms)</td>
+<tr><td>Total time:</td><td>8 seconds (8136 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,12 +76,12 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='api.test.UserTests2.testUpdateUserByName()'><b>testUpdateUserByName</b><br>Test class: api.test.UserTests2</td>
+<td title='api.test.UserTests2.testGetUserByName()'><b>testGetUserByName</b><br>Test class: api.test.UserTests2</td>
 <td><div><pre>java.lang.AssertionError: expected [200] but found [404]
-	at api.test.UserTests2.testUpdateUserByName(UserTests2.java:86)
+	at api.test.UserTests2.testGetUserByName(UserTests2.java:60)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1151632828", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1151632828'><pre>java.lang.AssertionError: expected [200] but found [404]
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace974630100", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace974630100'><pre>java.lang.AssertionError: expected [200] but found [404]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -89,7 +89,7 @@ function toggleAllBoxes() {
 	at org.testng.Assert.assertEquals(Assert.java:1431)
 	at org.testng.Assert.assertEquals(Assert.java:1395)
 	at org.testng.Assert.assertEquals(Assert.java:1441)
-	at api.test.UserTests2.testUpdateUserByName(UserTests2.java:86)
+	at api.test.UserTests2.testGetUserByName(UserTests2.java:60)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -121,8 +121,8 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 </pre></div></td>
-<td>9</td>
-<td>api.test.UserTests2@313ac989</td></tr>
+<td>3</td>
+<td>api.test.UserTests2@2a65fe7c</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -133,20 +133,89 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='api.test.UserTests2.testGetUserByName()'><b>testGetUserByName</b><br>Test class: api.test.UserTests2</td>
-<td></td>
-<td>5</td>
-<td>api.test.UserTests2@313ac989</td></tr>
-<tr>
 <td title='api.test.UserTests2.testPostUser()'><b>testPostUser</b><br>Test class: api.test.UserTests2</td>
 <td></td>
-<td>3</td>
-<td>api.test.UserTests2@313ac989</td></tr>
+<td>4</td>
+<td>api.test.UserTests2@2a65fe7c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='api.test.UserTests2.testUpdateUserByName()'><b>testUpdateUserByName</b><br>Test class: api.test.UserTests2</td>
+<td><div><pre>java.lang.Throwable: Method api.test.UserTests2.testUpdateUserByName() on instance api.test.UserTests2@2a65fe7c depends on not successfully finished methods 
+[api.test.UserTests2.testPostUser() on instance api.test.UserTests2@2a65fe7c
+api.test.UserTests2.testGetUserByName() on instance api.test.UserTests2@2a65fe7c]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace445729280", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace445729280'><pre>java.lang.Throwable: Method api.test.UserTests2.testUpdateUserByName() on instance api.test.UserTests2@2a65fe7c depends on not successfully finished methods 
+[api.test.UserTests2.testPostUser() on instance api.test.UserTests2@2a65fe7c
+api.test.UserTests2.testGetUserByName() on instance api.test.UserTests2@2a65fe7c]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+</pre></div></td>
+<td>0</td>
+<td>api.test.UserTests2@2a65fe7c</td></tr>
 <tr>
 <td title='api.test.UserTests2.testDeleteUserByName()'><b>testDeleteUserByName</b><br>Test class: api.test.UserTests2</td>
-<td></td>
-<td>8</td>
-<td>api.test.UserTests2@313ac989</td></tr>
+<td><div><pre>java.lang.Throwable: Method api.test.UserTests2.testDeleteUserByName() on instance api.test.UserTests2@2a65fe7c depends on not successfully finished methods 
+[api.test.UserTests2.testUpdateUserByName() on instance api.test.UserTests2@2a65fe7c]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace972598720", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace972598720'><pre>java.lang.Throwable: Method api.test.UserTests2.testDeleteUserByName() on instance api.test.UserTests2@2a65fe7c depends on not successfully finished methods 
+[api.test.UserTests2.testUpdateUserByName() on instance api.test.UserTests2@2a65fe7c]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+</pre></div></td>
+<td>0</td>
+<td>api.test.UserTests2@2a65fe7c</td></tr>
 </table><p>
 </body>
 </html>

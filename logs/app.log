@@ -12,3 +12,12 @@
 2025-09-21 01:10:17 [main] INFO  api.test.UserTests2 - ********** Updating User Info **********
 2025-09-21 01:10:26 [main] INFO  api.test.UserTests2 - ********** Deleting User **********
 2025-09-21 01:10:35 [main] INFO  api.test.UserTests2 - ********** User Deleted **********
+2025-09-21 23:50:03 [main] INFO  api.test.UserTests2 - ********** Creating User **********
+2025-09-21 23:50:10 [main] INFO  api.test.UserTests2 - ********** User Created **********
+2025-09-21 23:50:10 [main] INFO  api.test.UserTests2 - ********** Reading User Info **********
+2025-09-21 23:50:19 [main] INFO  api.test.UserTests2 - ********** User Info Displayed **********
+2025-09-21 23:50:19 [main] INFO  api.test.UserTests2 - ********** Updating User Info **********
+2025-09-21 23:50:27 [main] INFO  api.test.UserTests2 - ********** Deleting User **********
+2025-09-21 23:55:04 [main] INFO  api.test.UserTests2 - ********** Creating User **********
+2025-09-21 23:55:08 [main] INFO  api.test.UserTests2 - ********** User Created **********
+2025-09-21 23:55:08 [main] INFO  api.test.UserTests2 - ********** Reading User Info **********

@@ -12,7 +12,7 @@ import api.endpoints.UserEndPoints2;
 import api.payload.User;
 import io.restassured.response.Response;
 
-public class userTests2 {
+public class UserTests2 {
 
 	Faker faker;
 	User userPayload;
@@ -50,7 +50,7 @@ public class userTests2 {
 		logger.info("********** User Created **********"); //For logs
 	}
 
-	@Test(priority=2)
+	@Test(priority=2, dependsOnMethods = {"testPostUser"})
 	public void testGetUserByName() {
 		
 		logger.info("********** Reading User Info **********"); //For logs
@@ -62,7 +62,7 @@ public class userTests2 {
 		logger.info("********** User Info Displayed **********"); //For logs
 	}
 
-	@Test(priority=3)
+	@Test(priority=3, dependsOnMethods = {"testPostUser", "testGetUserByName"})
 	public void testUpdateUserByName() {
 		
 		logger.info("********** Updating User Info **********"); //For logs
@@ -91,7 +91,7 @@ public class userTests2 {
 		logger.info("********** User Info Updated **********"); //For logs
 	}
 
-	@Test(priority=4)
+	@Test(priority=4, dependsOnMethods = {"testUpdateUserByName"})
 	public void testDeleteUserByName() {
 		
 		logger.info("********** Deleting User **********"); //For logs

@@ -9,6 +9,9 @@
       <class name="api.test.UserTests2">
         <methods>
           <include name="setup"/>
+          <include name="testDeleteUserByName"/>
+          <include name="testPostUser"/>
+          <include name="testGetUserByName"/>
           <include name="testUpdateUserByName"/>
         </methods>
       </class> <!-- api.test.UserTests2 -->

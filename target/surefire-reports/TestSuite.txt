@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 28.802 s <<< FAILURE! - in TestSuite
-api.test.UserTests2.testUpdateUserByName  Time elapsed: 9.097 s  <<< FAILURE!
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 8.812 s <<< FAILURE! - in TestSuite
+api.test.UserTests2.testGetUserByName  Time elapsed: 3.167 s  <<< FAILURE!
 java.lang.AssertionError: expected [200] but found [404]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
@@ -11,7 +11,7 @@ java.lang.AssertionError: expected [200] but found [404]
 	at org.testng.Assert.assertEquals(Assert.java:1431)
 	at org.testng.Assert.assertEquals(Assert.java:1395)
 	at org.testng.Assert.assertEquals(Assert.java:1441)
-	at api.test.UserTests2.testUpdateUserByName(UserTests2.java:86)
+	at api.test.UserTests2.testGetUserByName(UserTests2.java:60)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
