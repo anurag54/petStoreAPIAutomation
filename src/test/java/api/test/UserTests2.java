@@ -12,7 +12,7 @@ import api.endpoints.UserEndPoints2;
 import api.payload.User;
 import io.restassured.response.Response;
 
-public class UserTests2 {
+public class userTests2 {
 
 	Faker faker;
 	User userPayload;

@@ -9,7 +9,7 @@
     <classes>
   <!--  <class name="api.test.DataDrivenTests"/> -->   
   <!--    <class name="api.test.UserTests"/> --> 
-       <class name="api.test.UserTests2"/>
+       <class name="api.test.userTests2"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- PetSuite -->
